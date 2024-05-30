@@ -19,19 +19,11 @@ return new class extends Migration
 
             //atributo foraneo 
             $table->unsignedBigInteger('truck_driver_id')->nullable();
-            $table->unsignedBigInteger('truck_id')->nullable();
-
+            
             //referencia truck_driver
             $table->foreign('truck_driver_id')
             ->references('id')
             ->on('truck_drivers')->onDelete('set null');
-
-            //referencia truck
-            $table->foreign('truck_id')
-            ->references('id')
-            ->on('trucks')->onDelete('set null');
-
-
 
             $table->timestamps();
         });
