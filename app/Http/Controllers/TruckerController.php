@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TruckDriverController extends Controller
+class TruckerController extends Controller
 {
     //
 }

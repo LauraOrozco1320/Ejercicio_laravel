@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Package extends Model
 {
     use HasFactory;
-    //Relacion Uno a Muchos con tabla Truck_driver
-    public function truck_drivers(){
-        return $this->belongsTo('App\Models\truck_diver');
+    //Relacion Uno a Muchos con tabla Trucker
+    public function truckers(){
+        return $this->belongsTo('App\Models\trucker');
         }
 
 }

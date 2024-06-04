@@ -9,7 +9,7 @@ class Truck extends Model
 {
     use HasFactory;
     // relacion muchos a muchos
-    public function truck_drivers(){
-        return $this->belongsToMany('App\Models\Truck_driver');
+    public function truckers(){
+        return $this->belongsToMany('App\Models\Trucker');
     }
 }
